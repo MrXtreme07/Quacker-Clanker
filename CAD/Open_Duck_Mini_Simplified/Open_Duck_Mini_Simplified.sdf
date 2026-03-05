@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.7">
+    <model name="Open_Duck_Mini_Simplified">
+        <link name="Base_Link">
+            <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+            <inertial>
+                <mass>1.9684302519585641</mass>
+                <pose>-0.03415259541905878 -2.340412795917269e-05 0.033010995393600875 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>0.005121034980046357</ixx>
+                    <iyy>0.010241211931603489</iyy>
+                    <izz>0.008460065395761338</izz>
+                    <ixy>-4.522829560938849e-06</ixy>
+                    <iyz>2.7747950485370167e-06</iyz>
+                    <ixz>0.0003671159147792206</ixz>
+                </inertia>
+            </inertial>
+            <visual name="Base_Link_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/Base_Link.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="Base_Link_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/Base_Link.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="L_Thigh">
+            <pose>-0.0038000000000000347 5.329070518200751e-17 -1.35229501208034e-14 1.8915628313209683e-13 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.25937750260452785</mass>
+                <pose>-0.031032448659312515 0.1035388204097626 -0.021371552287224056 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>0.0004342529486771238</ixx>
+                    <iyy>0.0005023439614216825</iyy>
+                    <izz>0.00021708001902644397</izz>
+                    <ixy>-8.27726818247285e-06</ixy>
+                    <iyz>-1.5499027702165054e-05</iyz>
+                    <ixz>-7.213181055005393e-05</ixz>
+                </inertia>
+            </inertial>
+            <visual name="L_Thigh_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_Thigh.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="L_Thigh_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_Thigh.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="L_Feet">
+            <pose>-0.0037999999999840206 0.0002999999999885983 -3.838707129943941e-14 4.2186868312581586e-13 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.26831438389665163</mass>
+                <pose>-0.024065628437512216 0.0908422823263262 -0.18097719336339996 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>7.498489913570529e-05</ixx>
+                    <iyy>0.000221367829430008</iyy>
+                    <izz>0.00024945365153443747</izz>
+                    <ixy>-2.0601914103554346e-07</ixy>
+                    <iyz>7.343370472097901e-07</iyz>
+                    <ixz>6.406580974771667e-06</ixz>
+                </inertia>
+            </inertial>
+            <visual name="L_Feet_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_Feet.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="L_Feet_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_Feet.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="L_Shin">
+            <pose>-0.0037999999999920454 0.0002499999999993552 -2.531308496145357e-14 3.0551731014508e-13 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.0879638629775456</mass>
+                <pose>-0.035062747188262 0.0903855262511664 -0.11582420003230887 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>7.936709900427646e-05</ixx>
+                    <iyy>6.174524754732795e-05</iyy>
+                    <izz>3.072522125902017e-05</izz>
+                    <ixy>8.704058561309926e-09</ixy>
+                    <iyz>-2.0329438509603343e-06</iyz>
+                    <ixz>1.1490857693420855e-08</ixz>
+                </inertia>
+            </inertial>
+            <visual name="L_Shin_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_Shin.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="L_Shin_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_Shin.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="L_hip_Roll2Pitch">
+            <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.10602697627624531</mass>
+                <pose>-0.014818719999186636 0.07566773372494888 0.0011484913220371664 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>5.423033438519949e-05</ixx>
+                    <iyy>3.7112765734958914e-05</iyy>
+                    <izz>7.38279563391466e-05</izz>
+                    <ixy>-4.154739662831365e-06</ixy>
+                    <iyz>-1.7824625751742564e-06</iyz>
+                    <ixz>2.752004454686599e-07</ixz>
+                </inertia>
+            </inertial>
+            <visual name="L_hip_Roll2Pitch_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_hip_Roll2Pitch.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="L_hip_Roll2Pitch_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_hip_Roll2Pitch.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="R_Thigh">
+            <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.2593775026043108</mass>
+                <pose>-0.031032448659315325 -0.10353882040975323 -0.02137155228720713 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>0.00043425294867627164</ixx>
+                    <iyy>0.0005023439614215467</iyy>
+                    <izz>0.0002170800190252815</izz>
+                    <ixy>8.277268182463869e-06</ixy>
+                    <iyz>1.5499027702213226e-05</iyz>
+                    <ixz>-7.213181055006651e-05</ixz>
+                </inertia>
+            </inertial>
+            <visual name="R_Thigh_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_Thigh.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="R_Thigh_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_Thigh.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="R_hip_Roll2Pitch">
+            <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.1060269762762521</mass>
+                <pose>-0.014818719999185883 -0.07566773372495088 0.0011484913220383955 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>5.423033438520307e-05</ixx>
+                    <iyy>3.7112765734963725e-05</iyy>
+                    <izz>7.382795633916351e-05</izz>
+                    <ixy>4.154739662834441e-06</ixy>
+                    <iyz>1.7824625751777682e-06</iyz>
+                    <ixz>2.7520044546570946e-07</ixz>
+                </inertia>
+            </inertial>
+            <visual name="R_hip_Roll2Pitch_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_hip_Roll2Pitch.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="R_hip_Roll2Pitch_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_hip_Roll2Pitch.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="R_Shin">
+            <pose>7.989164885202627e-15 -0.000249999999999293 -1.183941833460267e-14 -1.1636102701298318e-13 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.08796386297749642</mass>
+                <pose>-0.03506274718826922 -0.09038552625115734 -0.11582420003230408 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>7.936709900426562e-05</ixx>
+                    <iyy>6.174524754731767e-05</iyy>
+                    <izz>3.072522125900183e-05</izz>
+                    <ixy>-8.70405857041505e-09</ixy>
+                    <iyz>2.0329438509808126e-06</iyz>
+                    <ixz>1.1490857689465163e-08</ixz>
+                </inertia>
+            </inertial>
+            <visual name="R_Shin_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_Shin.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="R_Shin_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_Shin.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="L_hip_roll">
+            <pose>2.997602166487923e-16 -8.881784197001253e-18 -0.00020000000000120366 0.0 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.1492490667349632</mass>
+                <pose>-0.018876389938795472 0.03499999064295626 0.014424147719492868 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>5.607804841261871e-05</ixx>
+                    <iyy>6.0621169396812564e-05</iyy>
+                    <izz>2.33776428469934e-05</izz>
+                    <ixy>-1.5399447721772125e-11</ixy>
+                    <iyz>2.6498957935165886e-11</iyz>
+                    <ixz>-4.965259153638467e-08</ixz>
+                </inertia>
+            </inertial>
+            <visual name="L_hip_roll_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_hip_roll.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="L_hip_roll_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/L_hip_roll.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="R_Feet">
+            <pose>1.601385690719326e-14 -0.000299999999988545 -2.4851232183209504e-14 -2.3271239999371905e-13 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.2683143838971043</mass>
+                <pose>-0.02406562843767208 -0.09084228232630734 -0.1809771933634124 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>7.49848991448334e-05</ixx>
+                    <iyy>0.00022136782943110408</iyy>
+                    <izz>0.00024945365153563475</izz>
+                    <ixy>2.0601914177867484e-07</ixy>
+                    <iyz>-7.343370471775893e-07</iyz>
+                    <ixz>6.406580974430755e-06</ixz>
+                </inertia>
+            </inertial>
+            <visual name="R_Feet_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_Feet.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="R_Feet_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_Feet.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <link name="R_hip_roll">
+            <pose>2.997602166487923e-16 0.0 -0.00020000000000120366 0.0 -0.0 0.0</pose>
+            <inertial>
+                <mass>0.1492490671539157</mass>
+                <pose>-0.018876389988406708 -0.034999973867759014 0.01442414774490302 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>5.607804847161633e-05</ixx>
+                    <iyy>6.06211695731254e-05</iyy>
+                    <izz>2.337764299167476e-05</izz>
+                    <ixy>5.642952350239181e-11</ixy>
+                    <iyz>-3.080540382787052e-11</iyz>
+                    <ixz>-4.9652523698044476e-08</ixz>
+                </inertia>
+            </inertial>
+            <visual name="R_hip_roll_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_hip_roll.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="R_hip_roll_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Open_Duck_Mini_Simplified/meshes/R_hip_roll.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="Base_Link_Revolute-1" type="revolute">
+            <pose>-0.019000000000000298 0.03500000000000001 -0.013183999999998796 0.0 0.0 0.0</pose>
+            <parent>Base_Link</parent>
+            <child>L_hip_roll</child>
+            <axis>
+                <xyz expressed_in="__model__">0.0 0.0 1.0</xyz>
+            </axis>
+        </joint>
+        <joint name="Base_Link_Revolute-2" type="revolute">
+            <pose>-0.019000000000000298 -0.035 -0.013183999999998796 0.0 0.0 0.0</pose>
+            <parent>Base_Link</parent>
+            <child>R_hip_roll</child>
+            <axis>
+                <xyz expressed_in="__model__">0.0 0.0 1.0</xyz>
+            </axis>
+        </joint>
+        <joint name="R_hip_roll_Revolute-3" type="revolute">
+            <pose>-0.0368 -0.035 -7.4e-05 0.0 0.0 0.0</pose>
+            <parent>R_hip_roll</parent>
+            <child>R_hip_Roll2Pitch</child>
+            <axis>
+                <xyz expressed_in="__model__">-1.0 0.0 0.0</xyz>
+            </axis>
+        </joint>
+        <joint name="L_hip_roll_Revolute-4" type="revolute">
+            <pose>-0.0368 0.035 -7.4e-05 0.0 0.0 0.0</pose>
+            <parent>L_hip_roll</parent>
+            <child>L_hip_Roll2Pitch</child>
+            <axis>
+                <xyz expressed_in="__model__">-1.0 0.0 0.0</xyz>
+            </axis>
+        </joint>
+        <joint name="L_hip_Roll2Pitch_Revolute-5" type="revolute">
+            <pose>-0.03125999999999997 0.07204999999999993 -7.400000000010575e-05 0.0 0.0 0.0</pose>
+            <parent>L_hip_Roll2Pitch</parent>
+            <child>L_Thigh</child>
+            <axis>
+                <xyz expressed_in="__model__">0.0 1.0 0.0</xyz>
+            </axis>
+        </joint>
+        <joint name="R_hip_Roll2Pitch_Revolute-6" type="revolute">
+            <pose>-0.03506 -0.07205 -7.4e-05 0.0 0.0 0.0</pose>
+            <parent>R_hip_Roll2Pitch</parent>
+            <child>R_Thigh</child>
+            <axis>
+                <xyz expressed_in="__model__">-0.0 1.0 -0.0</xyz>
+            </axis>
+        </joint>
+        <joint name="R_Thigh_Revolute-7" type="revolute">
+            <pose>-0.03506000000000799 -0.07204999999999198 -0.07507399999999655 0.0 0.0 0.0</pose>
+            <parent>R_Thigh</parent>
+            <child>R_Shin</child>
+            <axis>
+                <xyz expressed_in="__model__">0.0 1.0 -0.0</xyz>
+            </axis>
+        </joint>
+        <joint name="L_Thigh_Revolute-8" type="revolute">
+            <pose>-0.03506000000000795 0.0720499999999777 -0.0750739999999967 0.0 0.0 0.0</pose>
+            <parent>L_Thigh</parent>
+            <child>L_Shin</child>
+            <axis>
+                <xyz expressed_in="__model__">-0.0 1.0 0.0</xyz>
+            </axis>
+        </joint>
+        <joint name="R_Shin_Revolute-9" type="revolute">
+            <pose>-0.035060000000016016 -0.07224999999997483 -0.157373999999992 0.0 0.0 0.0</pose>
+            <parent>R_Shin</parent>
+            <child>R_Feet</child>
+            <axis>
+                <xyz expressed_in="__model__">0.0 1.0 -0.0</xyz>
+            </axis>
+        </joint>
+        <joint name="L_Shin_Revolute-10" type="revolute">
+            <pose>-0.03506000000001598 0.07224999999994501 -0.1573739999999921 0.0 0.0 0.0</pose>
+            <parent>L_Shin</parent>
+            <child>L_Feet</child>
+            <axis>
+                <xyz expressed_in="__model__">-0.0 1.0 0.0</xyz>
+            </axis>
+        </joint>
+    </model>
+</sdf>
