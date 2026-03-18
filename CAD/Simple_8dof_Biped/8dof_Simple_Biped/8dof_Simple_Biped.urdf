@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="8dof_Simple_Biped">
+    <link name="Base_Link">
+        <inertial>
+            <origin xyz="-0.03214093433161277 -2.0737454732517e-05 0.030548776278561496" rpy="0.0 0.0 0.0" />
+            <mass value="2.266962348612593" />
+            <inertia ixx="0.005689617751029664" iyy="0.010513588157848256" izz="0.008933087865149068" ixy="-4.371019846959055e-06" iyz="1.8302601722153097e-06" ixz="0.00044106488001104853" />
+        </inertial>
+        <visual name="Base_Link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Base_Link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Base_Link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Base_Link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="L_Thigh">
+        <inertial>
+            <origin xyz="0.00022755134068354723 0.021297492287223947 0.03148882040976266" rpy="0.0 -0.0 0.0" />
+            <mass value="0.25937750260452785" />
+            <inertia ixx="0.0004342529486771238" iyy="0.00021708001902644397" izz="0.0005023439614216806" ixy="7.213181055005393e-05" iyz="1.549902770217399e-05" ixz="-8.27726818241904e-06" />
+        </inertial>
+        <visual name="L_Thigh_visual">
+            <origin xyz="0.03126000000000889 -7.406000000010576e-05 -0.07204999999999993" rpy="1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/L_Thigh.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="L_Thigh_collision">
+            <origin xyz="0.03126000000000889 -7.406000000010576e-05 -0.07204999999999993" rpy="1.5707963267948966 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/L_Thigh.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="L_Feet">
+        <inertial>
+            <origin xyz="0.010994371562507283 0.02360313336340214 0.018592282326388404" rpy="0.0 -0.0 0.0" />
+            <mass value="0.26831438389665163" />
+            <inertia ixx="7.498489913570529e-05" iyy="0.0002494536515344379" izz="0.00022136782943000762" ixy="-6.406580974771603e-06" iyz="-7.343370471999977e-07" ixz="-2.0601914105168232e-07" />
+        </inertial>
+        <visual name="L_Feet_visual">
+            <origin xyz="0.03506000000000232 -0.15737405999997 -0.07224999999999308" rpy="1.570796326795202 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/L_Feet.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="L_Feet_collision">
+            <origin xyz="0.03506000000000232 -0.15737405999997 -0.07224999999999308" rpy="1.570796326795202 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/L_Feet.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="L_Shin">
+        <inertial>
+            <origin xyz="-2.74718825057807e-06 0.0407501400323087 0.018335526251196388" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0879638629775456" />
+            <inertia ixx="7.936709900427646e-05" iyy="3.0725221259019395e-05" izz="6.174524754732873e-05" ixy="-1.14908576934225e-08" iyz="2.0329438509544686e-06" ixz="8.704058546317156e-09" />
+        </inertial>
+        <visual name="L_Shin_visual">
+            <origin xyz="0.03505999999999435 -0.07507405999998307 -0.07204999999999191" rpy="1.5707963267950857 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/L_Shin.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="L_Shin_collision">
+            <origin xyz="0.03505999999999435 -0.07507405999998307 -0.07204999999999191" rpy="1.5707963267950857 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/L_Shin.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="L_hip_Roll2Pitch">
+        <inertial>
+            <origin xyz="0.0012225513220371664 0.040667733724948876 -0.021981280000813366" rpy="0.0 -0.0 0.0" />
+            <mass value="0.10602697627624531" />
+            <inertia ixx="7.38279563391466e-05" iyy="3.7112765734958914e-05" izz="5.423033438519949e-05" ixy="-1.7824625751742564e-06" iyz="4.154739662831365e-06" ixz="-2.752004454686599e-07" />
+        </inertial>
+        <visual name="L_hip_Roll2Pitch_visual">
+            <origin xyz="7.406e-05 -0.035 -0.0368" rpy="-0.0 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/L_hip_Roll2Pitch.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="L_hip_Roll2Pitch_collision">
+            <origin xyz="7.406e-05 -0.035 -0.0368" rpy="-0.0 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/L_hip_Roll2Pitch.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="R_Thigh">
+        <inertial>
+            <origin xyz="0.004186680349742131 0.020882192803950827 -0.03174517366400776" rpy="0.0 -0.0 0.0" />
+            <mass value="0.2593775026043108" />
+            <inertia ixx="0.0004456889867103949" iyy="0.00020650582735228282" izz="0.0005014821150607033" ixy="5.196851224390125e-05" iyz="-1.883032384721246e-05" ixz="9.849361925640565e-06" />
+        </inertial>
+        <visual name="R_Thigh_visual">
+            <origin xyz="0.03857643435335732 -0.0030291545805708527 0.07016476566788642" rpy="1.5664696267469618 0.05110113077598505 -0.08450502073882524" />
+            <geometry>
+                <mesh filename="meshes/R_Thigh.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="R_Thigh_collision">
+            <origin xyz="0.03857643435335732 -0.0030291545805708527 0.07016476566788642" rpy="1.5664696267469618 0.05110113077598505 -0.08450502073882524" />
+            <geometry>
+                <mesh filename="meshes/R_Thigh.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="R_hip_Roll2Pitch">
+        <inertial>
+            <origin xyz="0.040667731809930045 -0.005777448677965258 -0.021981282039080945" rpy="0.0 -0.0 0.0" />
+            <mass value="0.1060269762762521" />
+            <inertia ixx="3.711276573496376e-05" iyy="7.382795633916373e-05" izz="5.423033438520285e-05" ixy="-1.7824625751777653e-06" iyz="-2.7520044546566214e-07" ixz="4.154739662834444e-06" />
+        </inertial>
+        <visual name="R_hip_Roll2Pitch_visual">
+            <origin xyz="-0.03500000191502086 -0.00692594000000365 -0.036800002038266805" rpy="-1.5707963267948966 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/R_hip_Roll2Pitch.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="R_hip_Roll2Pitch_collision">
+            <origin xyz="-0.03500000191502086 -0.00692594000000365 -0.036800002038266805" rpy="-1.5707963267948966 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/R_hip_Roll2Pitch.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="R_Shin">
+        <inertial>
+            <origin xyz="0.0024878482928749435 0.04060533550206622 -0.018487364156047806" rpy="0.0 -0.0 0.0" />
+            <mass value="0.08796386297749642" />
+            <inertia ixx="7.895571652522619e-05" iyy="3.1072777868619374e-05" izz="6.180907341663168e-05" ixy="-4.195384002248301e-06" iyz="-1.8122963806772105e-06" ixz="-1.0634317393030359e-06" />
+        </inertial>
+        <visual name="R_Shin_visual">
+            <origin xyz="0.03226266901896216 -0.07776222458055473 0.07048884434953206" rpy="1.5664696267467728 0.05110113077597808 -0.08450502073882758" />
+            <geometry>
+                <mesh filename="meshes/R_Shin.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="R_Shin_collision">
+            <origin xyz="0.03226266901896216 -0.07776222458055473 0.07048884434953206" rpy="1.5664696267467728 0.05110113077597808 -0.08450502073882758" />
+            <geometry>
+                <mesh filename="meshes/R_Shin.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="R_Feet">
+        <inertial>
+            <origin xyz="0.011974768956260656 0.022592358505165767 -0.019231413239926526" rpy="0.0 -6.426917320222827e-36 0.0" />
+            <mass value="0.2683143838971043" />
+            <inertia ixx="7.555994067315848e-05" iyy="0.00024929019116642285" izz="0.00022095624827094624" ixy="8.364497687556345e-06" iyz="2.8595784729685474e-07" ixz="7.751333334273743e-06" />
+        </inertial>
+        <visual name="R_Feet_visual">
+            <origin xyz="0.025344625952095245 -0.15976931458054255 0.07104420008586358" rpy="1.5664696267466565 0.05110113077597809 -0.08450502073882757" />
+            <geometry>
+                <mesh filename="meshes/R_Feet.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="R_Feet_collision">
+            <origin xyz="0.025344625952095245 -0.15976931458054255 0.07104420008586358" rpy="1.5664696267466565 0.05110113077597809 -0.08450502073882757" />
+            <geometry>
+                <mesh filename="meshes/R_Feet.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="L_hip_Roll2Pitch_Revolute-5" type="continuous">
+        <origin xyz="0.0 0.03705 -0.0017400000000000037" rpy="-1.5707963267947074 1.5707963267948966 0" />
+        <parent link="L_hip_Roll2Pitch" />
+        <child link="L_Thigh" />
+        <axis xyz="0.0 1.8915628313209683e-13 1.0" />
+    </joint>
+    <joint name="R_hip_Roll2Pitch_Revolute-6" type="continuous">
+        <origin xyz="0.03704999588999428 -0.007000000000000001 -0.0017399999690250968" rpy="-1.8915628313164018e-13 1.5195125125638467 3.141592653589793" />
+        <parent link="R_hip_Roll2Pitch" />
+        <child link="R_Thigh" />
+        <axis xyz="0.051261 -1.8890754261977813e-13 0.9986849999999937" />
+    </joint>
+    <joint name="R_Thigh_Revolute-7" type="continuous">
+        <origin xyz="0.006300949999999928 0.07473307000000011 -0.0005737499999858642" rpy="7.279601318462957e-14 1.5736058939118217e-18 2.980426279959983e-31" />
+        <parent link="R_Thigh" />
+        <child link="R_Shin" />
+        <axis xyz="0.051260999999999994 -1.1620725619248633e-13 0.9986850000000099" />
+    </joint>
+    <joint name="L_Thigh_Revolute-8" type="continuous">
+        <origin xyz="-0.0038000000000000347 0.07500000000000005 0.00024999999998581935" rpy="-7.279525611911365e-14 -0.0 0.0" />
+        <parent link="L_Thigh" />
+        <child link="L_Shin" />
+        <axis xyz="0.0 1.1636102701298318e-13 1.0" />
+    </joint>
+    <joint name="R_Shin_Revolute-9" type="continuous">
+        <origin xyz="0.006915480000000116 0.08200709000000007 -0.0006052899999904593" rpy="9.360074950021526e-18 -5.195858790161976e-18 -1.387778780781506e-17" />
+        <parent link="R_Shin" />
+        <child link="R_Feet" />
+        <axis xyz="0.051260999999999994 -1.1619790842603484e-13 0.9986850000000096" />
+    </joint>
+    <joint name="L_Shin_Revolute-10" type="continuous">
+        <origin xyz="4.884981308350689e-17 0.08230000000000004 0.0002499999999904201" rpy="-9.654032247312206e-18 -0.0 0.0" />
+        <parent link="L_Shin" />
+        <child link="L_Feet" />
+        <axis xyz="0.0 1.1635137298073587e-13 1.0" />
+    </joint>
+    <joint name="Base_Link_Revolute-11" type="continuous">
+        <origin xyz="-0.0367766 -0.03408755 0.0067259400000000006" rpy="1.5707963267948966 -0.0 -1.6220801410259464" />
+        <parent link="Base_Link" />
+        <child link="R_hip_Roll2Pitch" />
+        <axis xyz="3.2307091196032145e-07 0.0 0.9999997096729059" />
+    </joint>
+    <joint name="Base_Link_Revolute-12" type="continuous">
+        <origin xyz="-0.0368 0.035 -7.406e-05" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="Base_Link" />
+        <child link="L_hip_Roll2Pitch" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+</robot>
