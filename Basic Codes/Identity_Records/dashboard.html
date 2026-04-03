@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACTION MONITOR</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0b0d;
+    --bg2: #0f1114;
+    --bg3: #161820;
+    --border: #1e2230;
+    --accent: #00e5ff;
+    --accent2: #ff3d71;
+    --accent3: #a3ff4e;
+    --text: #c8d0e0;
+    --muted: #4a5270;
+    --mono: 'Share Tech Mono', monospace;
+    --sans: 'Barlow Condensed', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* scanline overlay */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.03) 2px,
+      rgba(0,0,0,0.03) 4px
+    );
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  /* ---- HEADER ---- */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg2);
+    position: sticky; top: 0; z-index: 50;
+  }
+
+  .logo {
+    display: flex; align-items: baseline; gap: 12px;
+  }
+  .logo-mark {
+    font-family: var(--sans);
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 6px;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  .logo-sub {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 2px;
+  }
+
+  .status-bar {
+    display: flex; align-items: center; gap: 24px;
+    font-family: var(--mono); font-size: 12px; color: var(--muted);
+  }
+  .live-dot {
+    display: flex; align-items: center; gap: 6px;
+    color: var(--accent3);
+  }
+  .live-dot::before {
+    content: '';
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent3);
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+
+  /* ---- LAYOUT ---- */
+  main {
+    padding: 28px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 16px;
+  }
+
+  /* ---- CARDS ---- */
+  .card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 20px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--accent);
+  }
+  .card.red::before { background: var(--accent2); }
+  .card.green::before { background: var(--accent3); }
+
+  .card-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .card-value {
+    font-family: var(--sans);
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: -1px;
+  }
+  .card.red .card-value { color: var(--accent2); }
+  .card.green .card-value { color: var(--accent3); }
+
+  .card-sub {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  /* ---- LIVE ACTION ---- */
+  .live-card {
+    grid-column: span 2;
+    background: var(--bg3);
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .live-card::after {
+    content: '';
+    position: absolute;
+    top: -50%; right: -60px;
+    width: 200px; height: 200%;
+    background: radial-gradient(ellipse, rgba(0,229,255,0.04) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .live-icon {
+    width: 64px; height: 64px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+    animation: rotate-border 4s linear infinite;
+    position: relative;
+  }
+  @keyframes rotate-border {
+    0% { box-shadow: 0 0 0 0 rgba(0,229,255,0.4); }
+    50% { box-shadow: 0 0 16px 4px rgba(0,229,255,0.15); }
+    100% { box-shadow: 0 0 0 0 rgba(0,229,255,0.4); }
+  }
+  .live-info { flex: 1; }
+  .live-action-name {
+    font-family: var(--sans);
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 6px;
+    transition: all 0.3s;
+  }
+  .live-confidence {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .conf-bar {
+    flex: 1; max-width: 180px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .conf-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent3));
+    border-radius: 2px;
+    transition: width 0.5s ease;
+  }
+
+  /* ---- BREAKDOWN ---- */
+  .breakdown-card {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .breakdown-list { margin-top: 12px; }
+  .breakdown-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .breakdown-item:last-child { border-bottom: none; }
+  .b-action {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    min-width: 80px;
+    font-size: 13px;
+  }
+  .b-bar-wrap {
+    flex: 1;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .b-bar {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s ease;
+  }
+  .b-count {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    min-width: 28px;
+    text-align: right;
+  }
+
+  /* ---- TIMELINE TABLE ---- */
+  .timeline-card {
+    grid-column: span 3;
+  }
+  .timeline-card .card-label { margin-bottom: 16px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+  thead tr {
+    border-bottom: 1px solid var(--border);
+  }
+  thead th {
+    color: var(--muted);
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 0 8px 10px 8px;
+    text-align: left;
+  }
+  tbody tr {
+    border-bottom: 1px solid rgba(30,34,48,0.6);
+    transition: background 0.15s;
+  }
+  tbody tr:hover { background: var(--bg3); }
+  tbody tr.new-row {
+    animation: row-flash 0.6s ease;
+  }
+  @keyframes row-flash {
+    0% { background: rgba(0,229,255,0.1); }
+    100% { background: transparent; }
+  }
+  td {
+    padding: 10px 8px;
+    vertical-align: middle;
+  }
+  .action-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: var(--sans);
+  }
+  .duration-bar {
+    display: flex; align-items: center; gap: 8px;
+  }
+  .dur-fill {
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    min-width: 2px;
+  }
+  .location-tag {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .conf-pill {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .no-data {
+    text-align: center;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 40px;
+    letter-spacing: 2px;
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  #timestamp { font-family: var(--mono); font-size: 11px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <span class="logo-mark">ActionMon</span>
+    <span class="logo-sub">// REAL-TIME ACTIVITY TRACKER</span>
+  </div>
+  <div class="status-bar">
+    <span class="live-dot">LIVE</span>
+    <span id="timestamp">--:--:--</span>
+    <span id="poll-status">POLLING 5s</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- LIVE ACTION -->
+  <div class="live-card" id="live-card">
+    <div class="live-icon" id="live-icon">⬜</div>
+    <div class="live-info">
+      <div class="card-label">CURRENT ACTION</div>
+      <div class="live-action-name" id="live-action">—</div>
+      <div class="live-confidence">
+        CONFIDENCE
+        <div class="conf-bar"><div class="conf-fill" id="conf-fill" style="width:0%"></div></div>
+        <span id="conf-val">—</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAT: TOTAL -->
+  <div class="card">
+    <div class="card-label">TOTAL EVENTS</div>
+    <div class="card-value" id="stat-total">0</div>
+    <div class="card-sub">recorded actions</div>
+  </div>
+
+  <!-- BREAKDOWN -->
+  <div class="card breakdown-card" style="grid-column: span 2;">
+    <div class="card-label">ACTION BREAKDOWN</div>
+    <div class="breakdown-list" id="breakdown-list">
+      <div class="no-data">AWAITING DATA…</div>
+    </div>
+  </div>
+
+  <!-- STAT: TOP ACTION -->
+  <div class="card green">
+    <div class="card-label">TOP ACTION</div>
+    <div class="card-value" id="stat-top" style="font-size:28px;margin-top:6px;">—</div>
+    <div class="card-sub" id="stat-top-sub">—</div>
+  </div>
+
+  <!-- TIMELINE TABLE -->
+  <div class="card timeline-card">
+    <div class="card-label">ACTIVITY LOG — LAST 50</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>ACTION</th>
+          <th>START</th>
+          <th>END</th>
+          <th>DURATION</th>
+          <th>LOCATION</th>
+          <th>CONF</th>
+        </tr>
+      </thead>
+      <tbody id="action-table"></tbody>
+    </table>
+    <div id="no-data-msg" class="no-data" style="display:none">NO ACTIONS RECORDED YET</div>
+  </div>
+
+</main>
+
+<script>
+const ACTION_COLORS = [
+  '#00e5ff','#a3ff4e','#ff3d71','#ffd740','#b388ff','#69f0ae','#ff8a65','#40c4ff'
+];
+const actionColorMap = {};
+let colorIdx = 0;
+
+function getColor(action) {
+  if (!actionColorMap[action]) {
+    actionColorMap[action] = ACTION_COLORS[colorIdx++ % ACTION_COLORS.length];
+  }
+  return actionColorMap[action];
+}
+
+const ACTION_ICONS = {
+  sitting: '🪑', standing: '🧍', walking: '🚶', running: '🏃',
+  eating: '🍽️', drinking: '🥤', typing: '⌨️', reading: '📖',
+  sleeping: '😴', talking: '🗣️', working: '💼', exercising: '🏋️',
+};
+function getIcon(action) {
+  return ACTION_ICONS[action?.toLowerCase()] || '⬡';
+}
+
+function fmt(dt) {
+  if (!dt) return '—';
+  const d = new Date(dt.replace(' ', 'T'));
+  return d.toLocaleTimeString('en-GB', { hour12: false });
+}
+
+let prevTotal = 0;
+
+async function fetchStats() {
+  const res = await fetch('/api/stats');
+  const data = await res.json();
+
+  // total
+  document.getElementById('stat-total').textContent = data.total;
+
+  // live
+  if (data.latest) {
+    const action = data.latest.action;
+    const conf = data.latest.confidence ?? 0;
+    document.getElementById('live-action').textContent = action.toUpperCase();
+    document.getElementById('live-icon').textContent = getIcon(action);
+    document.getElementById('conf-fill').style.width = (conf * 100) + '%';
+    document.getElementById('conf-val').textContent = (conf * 100).toFixed(0) + '%';
+    document.getElementById('live-card').style.borderColor = getColor(action);
+  }
+
+  // top action
+  if (data.by_action.length > 0) {
+    const top = data.by_action[0];
+    document.getElementById('stat-top').textContent = top.action.toUpperCase();
+    document.getElementById('stat-top-sub').textContent =
+      `${top.count} events · ${(top.total_duration || 0).toFixed(1)}s total`;
+  }
+
+  // breakdown
+  const maxCount = data.by_action[0]?.count || 1;
+  const bEl = document.getElementById('breakdown-list');
+  if (data.by_action.length === 0) {
+    bEl.innerHTML = '<div class="no-data">AWAITING DATA…</div>';
+  } else {
+    bEl.innerHTML = data.by_action.map(a => {
+      const color = getColor(a.action);
+      const pct = (a.count / maxCount * 100).toFixed(1);
+      return `<div class="breakdown-item">
+        <span class="b-action" style="color:${color}">${a.action}</span>
+        <div class="b-bar-wrap"><div class="b-bar" style="width:${pct}%;background:${color}"></div></div>
+        <span class="b-count">${a.count}</span>
+      </div>`;
+    }).join('');
+  }
+}
+
+async function fetchActions() {
+  const res = await fetch('/api/actions');
+  const rows = await res.json();
+
+  const tbody = document.getElementById('action-table');
+  const noData = document.getElementById('no-data-msg');
+
+  if (rows.length === 0) {
+    tbody.innerHTML = '';
+    noData.style.display = 'block';
+    return;
+  }
+  noData.style.display = 'none';
+
+  const maxDur = Math.max(...rows.map(r => r.duration || 0), 1);
+  const isNew = rows.length > prevTotal;
+  prevTotal = rows.length;
+
+  tbody.innerHTML = rows.slice(0, 50).map((r, i) => {
+    const color = getColor(r.action);
+    const durPct = Math.min(((r.duration || 0) / maxDur) * 120, 120);
+    const confPct = ((r.confidence || 0) * 100).toFixed(0);
+    const rowClass = i === 0 && isNew ? 'new-row' : '';
+    return `<tr class="${rowClass}">
+      <td style="color:var(--muted)">${r.id}</td>
+      <td><span class="action-badge" style="background:${color}22;color:${color};border:1px solid ${color}44">${r.action}</span></td>
+      <td>${fmt(r.start_time)}</td>
+      <td>${fmt(r.end_time)}</td>
+      <td>
+        <div class="duration-bar">
+          <div class="dur-fill" style="width:${durPct}px;background:${color}"></div>
+          <span style="font-size:10px;color:var(--muted)">${r.duration != null ? r.duration.toFixed(2) + 's' : '—'}</span>
+        </div>
+      </td>
+      <td><span class="location-tag">${r.location || '—'}</span></td>
+      <td><span class="conf-pill" style="color:${color}">${confPct}%</span></td>
+    </tr>`;
+  }).join('');
+}
+
+function updateClock() {
+  document.getElementById('timestamp').textContent =
+    new Date().toLocaleTimeString('en-GB', { hour12: false });
+}
+
+async function refresh() {
+  await Promise.all([fetchStats(), fetchActions()]);
+}
+
+refresh();
+setInterval(refresh, 5000);
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+</body>
+</html>
