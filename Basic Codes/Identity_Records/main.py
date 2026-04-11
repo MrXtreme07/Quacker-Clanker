@@ -1,9 +1,11 @@
 import cv2
 import sqlite3
+import os
 from datetime import datetime, timedelta
 
 # ---------------- DB SETUP ----------------
-conn = sqlite3.connect("actions.db")
+db_path = os.path.join(os.path.dirname(__file__), "actions.db")
+conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 
 cursor.execute("""
@@ -20,8 +22,8 @@ CREATE TABLE IF NOT EXISTS actions (
 conn.commit()
 
 # Optional: clear old data for clean testing
-cursor.execute("DELETE FROM actions")
-conn.commit()
+# cursor.execute("DELETE FROM actions")
+# conn.commit()
 
 # ---------------- CV SETUP ----------------
 cap = cv2.VideoCapture(0)
@@ -34,7 +36,7 @@ def dummy_action_detector(frame):
     return "sitting", 0.9
 
 # ---------------- TIMER ----------------
-record_duration = 10  # seconds
+record_duration = 2  # seconds
 start_recording = datetime.now()
 
 # ---------------- MAIN LOOP ----------------
