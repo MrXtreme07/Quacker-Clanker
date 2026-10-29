@@ -1,0 +1,10 @@
+running/000.jpg
+running/003.jpg
+running/004.jpg
+running/007.jpg
+sleeping/003.jpg
+drinking/005.jpg
+eating/000.jpg
+sitting/005.jpg
+typing/001.jpg
+typing/009.jpg

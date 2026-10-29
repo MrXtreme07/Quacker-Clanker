@@ -1,0 +1,51 @@
+image,expected,got,correct,seconds,raw
+sitting/000.jpg,sitting,unknown,0,7.1,The person is wearing a watch and a plaid shirt.
+sitting/001.jpg,sitting,unknown,0,6.6,a guy on a couch looking bored.
+sitting/002.jpg,sitting,working,0,6.6,A man and woman are sitting at a desk.
+sitting/003.jpg,sitting,unknown,0,6.7,Dreamstime.com.
+sitting/004.jpg,sitting,sitting,1,6.3,A family of three sits on a white sofa.
+sitting/006.jpg,sitting,drinking,0,6.8,The man on the right is holding a drink.
+sitting/007.jpg,sitting,sitting,1,6.2,The people are sitting in a room.
+sitting/008.jpg,sitting,unknown,0,6.7,Green Park.
+sitting/009.jpg,sitting,sitting,1,6.2,A man sits on a park bench.
+eating/001.jpg,eating,eating,1,6.7,The people are laughing and eating.
+eating/002.jpg,eating,eating,1,6.2,The family is enjoying a meal together.
+eating/003.jpg,eating,eating,1,6.7,The kids are eating fruits and vegetables.
+eating/004.jpg,eating,eating,1,7.2,A woman is eating a burger and looking up at the camera.
+eating/005.jpg,eating,eating,1,6.2,The elderly are enjoying a breakfast together.
+eating/006.jpg,eating,eating,1,6.8,The man is sitting at the table and eating.
+eating/007.jpg,eating,eating,1,6.3,The man is holding a sandwich in his hand.
+eating/008.jpg,eating,eating,1,6.9,The people are eating a lot of French fries.
+eating/009.jpg,eating,eating,1,6.5,A man and a woman are sitting at a table and eating. The woman is holding a fork and
+drinking/000.jpg,drinking,drinking,1,7.0,An elderly man holds a cup in front of him and looks at the camera.
+drinking/001.jpg,drinking,drinking,1,7.2,The boy is drinking from a water bottle.
+drinking/002.jpg,drinking,drinking,1,6.1,The woman is drinking from a glass.
+drinking/003.jpg,drinking,drinking,1,7.0,"A boy sits in front of a bottle of milk, drinking from a glass."
+drinking/004.jpg,drinking,drinking,1,6.3,A boy is drinking from a bottle in the rain.
+drinking/006.jpg,drinking,sleeping,0,6.8,The woman is sleeping.
+drinking/007.jpg,drinking,drinking,1,6.5,An older man holds a glass of alcohol to his lips and drinks from it.
+drinking/008.jpg,drinking,drinking,1,7.0,A woman sits at a table with a bottle and a glass of white wine.
+drinking/009.jpg,drinking,eating,0,7.5,An elderly man holds a tea cup and spoon and is smiling as he watches the camera.
+running/001.jpg,running,unknown,0,6.2,The girls are jumping in the air.
+running/002.jpg,running,running,1,6.8,The person is running on the beach.
+running/005.jpg,running,running,1,6.2,Two people are running on the road.
+running/006.jpg,running,running,1,7.0,The person is running.
+running/008.jpg,running,running,1,6.2,The man is running on a bridge.
+running/009.jpg,running,walking,0,6.8,The person is walking up the steps.
+sleeping/000.jpg,sleeping,unknown,0,7.9,"The image is a candid shot taken by Adobe Stock. The subjects in the image are two people,"
+sleeping/001.jpg,sleeping,sleeping,1,6.3,A baby is sleeping on a bed with a blue blanket.
+sleeping/002.jpg,sleeping,sleeping,1,6.8,The woman is sleeping with her head on the keyboard.
+sleeping/004.jpg,sleeping,sleeping,1,6.4,A sleeping baby wearing a pink onesie is lying on a white blanket.
+sleeping/005.jpg,sleeping,sleeping,1,6.9,The person is lying on a bench.
+sleeping/006.jpg,sleeping,sleeping,1,6.2,A man is sleeping on a bench.
+sleeping/007.jpg,sleeping,sleeping,1,7.1,A man sleeping next to a laptop with a bunch of files in front of him.
+sleeping/008.jpg,sleeping,unknown,0,7.3,The person is wearing striped pajamas.
+sleeping/009.jpg,sleeping,unknown,0,6.2,Www.ventnor.com.
+typing/000.jpg,typing,typing,1,6.9,A young woman is lying on the couch and typing on her laptop.
+typing/002.jpg,typing,unknown,0,6.5,Dreamstime.com is a popular online marketplace for free and paid images.
+typing/003.jpg,typing,typing,1,7.2,A man in a green jacket sits at a desk and uses a laptop.
+typing/004.jpg,typing,typing,1,6.3,The man is sitting on the floor next to a laptop.
+typing/005.jpg,typing,typing,1,6.9,An elderly woman sits in front of a laptop and has glasses on.
+typing/006.jpg,typing,working,1,7.2,A man is working on a laptop on a wooden desk.
+typing/007.jpg,typing,unknown,0,6.2,The boy is using a MacBook Air.
+typing/008.jpg,typing,unknown,0,6.6,Masterfile.

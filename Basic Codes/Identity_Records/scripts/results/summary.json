@@ -1,0 +1,173 @@
+[
+  {
+    "model": "ggml-org/SmolVLM-256M-Instruct-GGUF",
+    "correct": 38,
+    "total": 50,
+    "avg_seconds": 6.0,
+    "peak_ram_mb": 974,
+    "per_action": {
+      "sitting": "5/9",
+      "eating": "7/9",
+      "drinking": "8/9",
+      "running": "5/6",
+      "sleeping": "8/9",
+      "typing": "5/8"
+    }
+  },
+  {
+    "model": "ggml-org/SmolVLM-500M-Instruct-GGUF",
+    "correct": 34,
+    "total": 50,
+    "avg_seconds": 6.7,
+    "peak_ram_mb": 1672,
+    "per_action": {
+      "sitting": "3/9",
+      "eating": "9/9",
+      "drinking": "7/9",
+      "running": "4/6",
+      "sleeping": "6/9",
+      "typing": "5/8"
+    }
+  },
+  {
+    "model": "ggml-org/SmolVLM2-500M-Video-Instruct-GGUF",
+    "correct": 35,
+    "total": 50,
+    "avg_seconds": 6.3,
+    "peak_ram_mb": 1717,
+    "per_action": {
+      "sitting": "7/9",
+      "eating": "5/9",
+      "drinking": "6/9",
+      "running": "4/6",
+      "sleeping": "8/9",
+      "typing": "5/8"
+    }
+  },
+  {
+    "model": "ggml-org/LFM2-VL-450M-GGUF",
+    "correct": 22,
+    "total": 50,
+    "avg_seconds": 1.2,
+    "peak_ram_mb": 2416,
+    "per_action": {
+      "sitting": "9/9",
+      "eating": "4/9",
+      "drinking": "0/9",
+      "running": "4/6",
+      "sleeping": "5/9",
+      "typing": "0/8"
+    }
+  },
+  {
+    "model": "ggml-org/InternVL3-1B-Instruct-GGUF",
+    "correct": 23,
+    "total": 50,
+    "avg_seconds": 10.2,
+    "peak_ram_mb": 2071,
+    "per_action": {
+      "sitting": "5/9",
+      "eating": "1/9",
+      "drinking": "4/9",
+      "running": "6/6",
+      "sleeping": "0/9",
+      "typing": "7/8"
+    }
+  },
+  {
+    "model": "ggml-org/SmolVLM-256M-Instruct-GGUF",
+    "prompt": "describe",
+    "correct": 35,
+    "total": 50,
+    "avg_seconds": 6.0,
+    "peak_ram_mb": 848,
+    "per_action": {
+      "sitting": "3/9",
+      "eating": "8/9",
+      "drinking": "7/9",
+      "running": "5/6",
+      "sleeping": "7/9",
+      "typing": "5/8"
+    }
+  },
+  {
+    "model": "ggml-org/SmolVLM-500M-Instruct-GGUF",
+    "prompt": "describe",
+    "correct": 31,
+    "total": 50,
+    "avg_seconds": 6.6,
+    "peak_ram_mb": 1523,
+    "per_action": {
+      "sitting": "4/9",
+      "eating": "6/9",
+      "drinking": "6/9",
+      "running": "4/6",
+      "sleeping": "7/9",
+      "typing": "4/8"
+    }
+  },
+  {
+    "model": "ggml-org/SmolVLM2-500M-Video-Instruct-GGUF",
+    "prompt": "describe",
+    "correct": 40,
+    "total": 50,
+    "avg_seconds": 7.1,
+    "peak_ram_mb": 1544,
+    "per_action": {
+      "sitting": "6/9",
+      "eating": "8/9",
+      "drinking": "7/9",
+      "running": "4/6",
+      "sleeping": "9/9",
+      "typing": "6/8"
+    }
+  },
+  {
+    "model": "ggml-org/LFM2-VL-450M-GGUF",
+    "prompt": "describe",
+    "correct": 41,
+    "total": 50,
+    "avg_seconds": 1.5,
+    "peak_ram_mb": 1041,
+    "per_action": {
+      "sitting": "5/9",
+      "eating": "6/9",
+      "drinking": "9/9",
+      "running": "5/6",
+      "sleeping": "9/9",
+      "typing": "7/8"
+    }
+  },
+  {
+    "model": "ggml-org/InternVL3-1B-Instruct-GGUF",
+    "prompt": "describe",
+    "correct": 43,
+    "total": 50,
+    "avg_seconds": 10.9,
+    "peak_ram_mb": 1726,
+    "per_action": {
+      "sitting": "5/9",
+      "eating": "9/9",
+      "drinking": "9/9",
+      "running": "5/6",
+      "sleeping": "9/9",
+      "typing": "6/8"
+    }
+  },
+  {
+    "model": "ggml-org/Qwen3-VL-2B-Instruct-GGUF",
+    "prompt": "describe",
+    "correct": 44,
+    "total": 50,
+    "avg_seconds": 6.1,
+    "peak_ram_mb": 3291,
+    "per_action": {
+      "sitting": "7/9",
+      "eating": "8/9",
+      "drinking": "8/9",
+      "running": "5/6",
+      "sleeping": "9/9",
+      "typing": "7/8"
+    }
+  }
+]

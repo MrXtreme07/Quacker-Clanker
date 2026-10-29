@@ -1,0 +1,51 @@
+image,expected,got,correct,seconds,raw
+sitting/000.jpg,sitting,sitting,1,6.7,sitting
+sitting/001.jpg,sitting,sitting,1,5.8,sitting
+sitting/002.jpg,sitting,unknown,0,6.5,playing the piano
+sitting/003.jpg,sitting,sitting,1,5.8,sitting
+sitting/004.jpg,sitting,sitting,1,6.4,sitting
+sitting/006.jpg,sitting,eating,0,7.7,"laughing, drinking, eating, talking, working, exercising, drinking, laughing, drinking, laughing,"
+sitting/007.jpg,sitting,sitting,1,6.0,The person is sitting.
+sitting/008.jpg,sitting,sitting,1,6.7,The person is sitting on a green slide.
+sitting/009.jpg,sitting,sitting,1,5.9,sitting
+eating/001.jpg,eating,unknown,0,6.6,laughing
+eating/002.jpg,eating,eating,1,5.9,eating
+eating/003.jpg,eating,eating,1,6.8,They are preparing food.
+eating/004.jpg,eating,eating,1,5.9,eating a burger
+eating/005.jpg,eating,sitting,0,6.7,The person is sitting at the table.
+eating/006.jpg,eating,sitting,0,6.1,The person is sitting at the table.
+eating/007.jpg,eating,standing,0,6.6,The person is standing.
+eating/008.jpg,eating,eating,1,7.0,The person is eating.
+eating/009.jpg,eating,eating,1,6.0,The person is eating.
+drinking/000.jpg,drinking,sitting,0,6.5,sitting
+drinking/001.jpg,drinking,drinking,1,5.9,drinking water
+drinking/002.jpg,drinking,drinking,1,6.5,drinking
+drinking/003.jpg,drinking,drinking,1,6.0,drinking from a cup
+drinking/004.jpg,drinking,drinking,1,6.6,drinking water
+drinking/006.jpg,drinking,sleeping,0,5.9,sleeping
+drinking/007.jpg,drinking,drinking,1,6.6,drinking
+drinking/008.jpg,drinking,drinking,1,5.9,drinking
+drinking/009.jpg,drinking,sitting,0,6.5,The person is sitting.
+running/001.jpg,running,unknown,0,6.0,The person is jumping.
+running/002.jpg,running,running,1,6.4,running
+running/005.jpg,running,running,1,5.9,running
+running/006.jpg,running,running,1,6.4,running
+running/008.jpg,running,running,1,6.4,jogging
+running/009.jpg,running,walking,0,6.2,walking.
+sleeping/000.jpg,sleeping,sleeping,1,6.7,The person is sleeping.
+sleeping/001.jpg,sleeping,sleeping,1,5.8,sleeping
+sleeping/002.jpg,sleeping,typing,0,6.5,typing.
+sleeping/004.jpg,sleeping,sleeping,1,5.9,sleeping.
+sleeping/005.jpg,sleeping,sleeping,1,6.5,lying down
+sleeping/006.jpg,sleeping,sleeping,1,6.1,The person is sleeping on a bench.
+sleeping/007.jpg,sleeping,sleeping,1,6.6,sleeping
+sleeping/008.jpg,sleeping,sleeping,1,5.9,lying down
+sleeping/009.jpg,sleeping,sleeping,1,6.5,sleeping.
+typing/000.jpg,typing,sleeping,0,6.2,"The person is lying on a couch, using a laptop."
+typing/002.jpg,typing,working,1,7.0,"The person is sitting at a desk, holding a white mug, and working on a laptop."
+typing/003.jpg,typing,working,1,7.5,"The person is sitting at a desk, working on a laptop."
+typing/004.jpg,typing,sitting,0,5.9,sitting
+typing/005.jpg,typing,typing,1,6.9,The person is sitting at a desk and typing on a laptop.
+typing/006.jpg,typing,typing,1,5.9,typing
+typing/007.jpg,typing,sitting,0,6.4,sitting
+typing/008.jpg,typing,typing,1,6.2,the person is sitting at a desk with a laptop

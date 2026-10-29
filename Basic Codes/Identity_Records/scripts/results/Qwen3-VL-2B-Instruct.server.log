@@ -1,0 +1,13 @@
+0.00.551.611 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.552.091 W srv  llama_server: -----------------
+0.00.552.093 W srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+0.00.552.094 W srv  llama_server: this can be a security risk (cross-origin attacks)
+0.00.552.094 W srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+0.00.552.094 W srv  llama_server: -----------------
+8.30.232.377 I srv    load_model: loading model 'ggml-org/Qwen3-VL-2B-Instruct-GGUF'
+8.31.519.310 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+8.45.553.456 I cmn          init: llama threadpool init, n_threads = 4
+8.48.269.620 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+8.48.269.642 W load_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+8.48.269.642 W load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+

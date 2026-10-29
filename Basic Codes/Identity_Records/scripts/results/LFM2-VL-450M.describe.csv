@@ -1,0 +1,51 @@
+image,expected,got,correct,seconds,raw
+sitting/000.jpg,sitting,talking,0,1.6,A woman is listening to music on her phone while sitting on a staircase.
+sitting/001.jpg,sitting,talking,0,1.3,A man sits on a couch talking on his phone.
+sitting/002.jpg,sitting,unknown,0,1.3,A man in a suit is playing the piano.
+sitting/003.jpg,sitting,sitting,1,1.5,"A woman sits on a staircase, wearing a black dress and black boots."
+sitting/004.jpg,sitting,sitting,1,2.4,A family is sitting on a couch together.
+sitting/006.jpg,sitting,unknown,0,1.3,A group of friends are enjoying a casual hangout together.
+sitting/007.jpg,sitting,sitting,1,1.8,"A group of elderly people are sitting together in a church pew, smiling and enjoying each other's company."
+sitting/008.jpg,sitting,sitting,1,1.4,A man and a boy are sitting on a green inflatable tube at a park.
+sitting/009.jpg,sitting,sitting,1,1.5,"A man in a suit sits on a bench, looking down at the ground."
+eating/001.jpg,eating,sitting,0,1.4,A group of people are sitting at a table in a restaurant.
+eating/002.jpg,eating,eating,1,1.2,A family enjoys a meal together.
+eating/003.jpg,eating,unknown,0,1.2,A group of kids are washing fruits and vegetables.
+eating/004.jpg,eating,eating,1,2.2,A woman is eating a burger.
+eating/005.jpg,eating,eating,1,1.5,"A family gathers around a table, sharing a meal and enjoying each other's company."
+eating/006.jpg,eating,eating,1,1.4,A man and woman are eating together at a restaurant.
+eating/007.jpg,eating,unknown,0,1.4,A man is holding a burrito and a woman is holding a burrito.
+eating/008.jpg,eating,eating,1,1.4,Two women are serving themselves food at a table.
+eating/009.jpg,eating,eating,1,1.3,A couple enjoys a meal together at a restaurant.
+drinking/000.jpg,drinking,drinking,1,1.8,"An elderly man is sitting in a chair, holding a white mug, and appears to be enjoying a moment of relaxation."
+drinking/001.jpg,drinking,drinking,1,1.3,A boy is drinking water from a plastic bottle.
+drinking/002.jpg,drinking,drinking,1,2.1,A woman is drinking water from a glass.
+drinking/003.jpg,drinking,drinking,1,1.2,A boy is drinking milk from a glass.
+drinking/004.jpg,drinking,drinking,1,1.3,A boy is drinking water from a bottle.
+drinking/006.jpg,drinking,drinking,1,1.2,A child is drinking water from a bottle.
+drinking/007.jpg,drinking,drinking,1,1.3,A man with glasses is drinking from a glass.
+drinking/008.jpg,drinking,drinking,1,1.5,A woman is sitting at a table with a bottle of wine and a glass of wine.
+drinking/009.jpg,drinking,drinking,1,1.2,A man is drinking tea.
+running/001.jpg,running,running,1,1.3,A group of children are running in a field.
+running/002.jpg,running,running,1,2.4,A woman is jogging on the beach.
+running/005.jpg,running,running,1,1.2,Two women jogging in the road.
+running/006.jpg,running,running,1,1.3,A group of people are running in a park.
+running/008.jpg,running,running,1,1.4,A man is jogging along a boardwalk near a body of water.
+running/009.jpg,running,walking,0,1.2,A woman is walking up a staircase.
+sleeping/000.jpg,sleeping,sleeping,1,1.6,"A woman is sleeping peacefully on a bed, while a man is awake and looking at the camera."
+sleeping/001.jpg,sleeping,sleeping,1,1.2,A child is sleeping on a bed.
+sleeping/002.jpg,sleeping,sleeping,1,1.3,A woman is sleeping on a computer keyboard.
+sleeping/004.jpg,sleeping,sleeping,1,2.2,A baby is sleeping on a white blanket.
+sleeping/005.jpg,sleeping,sleeping,1,1.3,A woman is sleeping on a bench.
+sleeping/006.jpg,sleeping,sleeping,1,1.4,"A man is lying on a bench, possibly resting or taking a break."
+sleeping/007.jpg,sleeping,sleeping,1,1.3,A man is sleeping on a desk with a laptop.
+sleeping/008.jpg,sleeping,sleeping,1,1.3,A woman is sleeping on a white bed.
+sleeping/009.jpg,sleeping,sleeping,1,1.4,"A person is lying on the ground, possibly injured or unconscious."
+typing/000.jpg,typing,typing,1,1.3,A woman is using a laptop on a couch.
+typing/002.jpg,typing,drinking,0,1.5,A man is smiling and holding a coffee mug while sitting at a desk.
+typing/003.jpg,typing,typing,1,2.7,"A child is sitting at a table with a laptop, seemingly engaged in an activity."
+typing/004.jpg,typing,typing,1,1.4,A man is sitting on the floor with a laptop in his lap.
+typing/005.jpg,typing,typing,1,1.2,An elderly woman is using a laptop computer.
+typing/006.jpg,typing,typing,1,1.3,A man is typing on a laptop.
+typing/007.jpg,typing,typing,1,1.3,A boy is using a laptop on a wooden deck.
+typing/008.jpg,typing,working,1,1.4,A child is working on a laptop at a table.

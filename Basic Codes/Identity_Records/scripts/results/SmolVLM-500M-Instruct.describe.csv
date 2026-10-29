@@ -1,0 +1,51 @@
+image,expected,got,correct,seconds,raw
+sitting/000.jpg,sitting,unknown,0,6.9,The person is wearing a watch and a plaid shirt.
+sitting/001.jpg,sitting,sitting,1,6.7,"A young man sits on a couch, looking bored, with his hand on his head, and he is wearing a blue shirt."
+sitting/002.jpg,sitting,working,0,7.4,A black and white photo of a man in a suit and a woman in a white flower arrangement sitting at a desk.
+sitting/003.jpg,sitting,unknown,0,6.0,Dreamstime.com.
+sitting/004.jpg,sitting,sitting,1,6.7,A family of three sits on a white sofa.
+sitting/006.jpg,sitting,drinking,0,7.2,The man on the right is holding a drink.
+sitting/007.jpg,sitting,sitting,1,6.2,The people in the picture are sitting in a room.
+sitting/008.jpg,sitting,unknown,0,6.5,Green Park.
+sitting/009.jpg,sitting,sitting,1,6.1,A man sits on a park bench.
+eating/001.jpg,eating,unknown,0,6.7,The woman in the middle is smiling.
+eating/002.jpg,eating,eating,1,6.1,The family is enjoying a meal together.
+eating/003.jpg,eating,unknown,0,7.3,"The word ""GROCERY"" is on the front of one of the children's shirts."
+eating/004.jpg,eating,eating,1,6.2,A woman is eating a burger and looking up.
+eating/005.jpg,eating,eating,1,6.8,A group of elderly people are sitting around a table enjoying breakfast.
+eating/006.jpg,eating,sitting,0,7.3,The man sitting at the table is wearing a white shirt.
+eating/007.jpg,eating,eating,1,6.5,A man and a woman are posing for a photo. The man is holding a sandwich in his hand.
+eating/008.jpg,eating,eating,1,6.7,The people are eating a lot of French fries.
+eating/009.jpg,eating,eating,1,6.8,A couple is sitting at a table and eating. The woman is holding a fork and the man is holding a spoon. They are both smiling.
+drinking/000.jpg,drinking,drinking,1,6.9,An elderly man holds a cup in front of him and looks to his right.
+drinking/001.jpg,drinking,drinking,1,6.1,The boy is drinking from the bottle.
+drinking/002.jpg,drinking,drinking,1,6.6,The woman is drinking from a glass.
+drinking/003.jpg,drinking,drinking,1,7.7,A boy sits at a table with a bottle of milk behind him and a glass in front of him.
+drinking/004.jpg,drinking,drinking,1,6.2,A boy is drinking from a bottle in the rain.
+drinking/006.jpg,drinking,sleeping,0,6.7,The person in the red jacket is sleeping.
+drinking/007.jpg,drinking,unknown,0,6.4,An older man holds a glass of alcohol with a slice of orange in his hand.
+drinking/008.jpg,drinking,drinking,1,7.1,A woman sits at a table with a bottle and a glass of white wine.
+drinking/009.jpg,drinking,eating,0,6.2,A senior smiling and holding a tea cup and spoon.
+running/001.jpg,running,unknown,0,6.8,The girl in the pink shirt has her arms up in the air.
+running/002.jpg,running,running,1,7.5,A person running on the beach wearing a blue tank top and black shorts.
+running/005.jpg,running,running,1,6.1,Two people are running on the road.
+running/006.jpg,running,running,1,6.7,A group of people are running in a field.
+running/008.jpg,running,running,1,6.2,A man is jogging on a bridge in front of a river.
+running/009.jpg,running,walking,0,6.9,A woman is walking up the steps.
+sleeping/000.jpg,sleeping,unknown,0,6.0,This image is a photograph.
+sleeping/001.jpg,sleeping,sleeping,1,6.8,A baby is sleeping on a bed with a blue blanket.
+sleeping/002.jpg,sleeping,sleeping,1,6.1,Woman sleeping with computer in front of her.
+sleeping/004.jpg,sleeping,sleeping,1,6.9,A sleeping baby wearing a pink onesie is lying on a white blanket.
+sleeping/005.jpg,sleeping,sleeping,1,7.2,A woman is lying on a bench and her eyes are closed.
+sleeping/006.jpg,sleeping,sleeping,1,6.2,A person is lying on a bench outside a store.
+sleeping/007.jpg,sleeping,sleeping,1,7.0,A man sleeps on his side over a laptop on a desk full of binders.
+sleeping/008.jpg,sleeping,sleeping,1,6.2,A woman wearing striped pajamas is lying on a bed.
+sleeping/009.jpg,sleeping,unknown,0,6.9,Www.venturecloaks.com.
+typing/000.jpg,typing,sleeping,0,6.3,A young woman is lying on the couch and using a laptop.
+typing/002.jpg,typing,drinking,0,7.0,The person in the photo is sitting at a desk and holding a cup of coffee.
+typing/003.jpg,typing,typing,1,7.5,A man in a green jacket sits at a desk and looks at a laptop computer.
+typing/004.jpg,typing,unknown,0,6.2,The person is smiling and looking at the camera.
+typing/005.jpg,typing,typing,1,6.9,An older woman sits in front of a laptop and has her hand on the keyboard.
+typing/006.jpg,typing,working,1,6.2,A man is working on a laptop on a wooden desk.
+typing/007.jpg,typing,unknown,0,7.0,The boy is wearing a blue and white striped shirt.
+typing/008.jpg,typing,typing,1,6.1,A boy is using a laptop in the kitchen.

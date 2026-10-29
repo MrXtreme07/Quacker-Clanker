@@ -1,0 +1,51 @@
+image,expected,got,correct,seconds,raw
+sitting/000.jpg,sitting,talking,0,8.0,Woman with curly hair using earphones while holding phone.
+sitting/001.jpg,sitting,sitting,1,5.9,"Man sitting on a couch with the text ""shockck"" in the lower right corner."
+sitting/002.jpg,sitting,unknown,0,6.3,Black and white still image of a man playing a piano.
+sitting/003.jpg,sitting,sitting,1,5.8,The woman is sitting on the steps and her legs are crossed.
+sitting/004.jpg,sitting,unknown,0,6.2,A white sofa with two adults and a child on it.
+sitting/006.jpg,sitting,sitting,1,6.0,Several people are sitting on chairs in a room with a plant in the corner and a microphone in front
+sitting/007.jpg,sitting,reading,0,6.4,An elderly group of people are sitting in wooden benches and holding a book.
+sitting/008.jpg,sitting,sitting,1,5.8,"The image shows a man and a child sitting on a green bench, while the man is holding a"
+sitting/009.jpg,sitting,sitting,1,6.3,A man in a blue suit is sitting on a wooden bench by a road.
+eating/001.jpg,eating,eating,1,5.8,"In this image, there are three people sitting at a table eating and drinking. Behind them, there"
+eating/002.jpg,eating,eating,1,6.2,People sitting at a table with plates of food.
+eating/003.jpg,eating,eating,1,5.6,Children preparing food in a cafeteria.
+eating/004.jpg,eating,eating,1,6.1,Woman eating a hamburger.
+eating/005.jpg,eating,unknown,0,5.5,Great time with the elderly.
+eating/006.jpg,eating,unknown,0,6.3,The woman on the left has her hand outstretched as she looks at the camera.
+eating/007.jpg,eating,eating,1,5.7,Man in blue jacket posing with woman in green shirt holding a sandwich in front of a counter.
+eating/008.jpg,eating,eating,1,6.3,Two women are eating sandwiches while two others watch.
+eating/009.jpg,eating,eating,1,5.7,The woman is eating a piece of cheese and a glass of red wine.
+drinking/000.jpg,drinking,drinking,1,6.4,The man in the blue and white shirt is holding a white mug in his hands.
+drinking/001.jpg,drinking,drinking,1,5.6,"In the image, a child is drinking a water bottle."
+drinking/002.jpg,drinking,drinking,1,6.4,Woman drinking a glass of lemonade.
+drinking/003.jpg,drinking,drinking,1,5.5,Drink.
+drinking/004.jpg,drinking,unknown,0,6.3,Alamy.
+drinking/006.jpg,drinking,drinking,1,5.5,Bottle.
+drinking/007.jpg,drinking,drinking,1,6.4,Man holding a lemon in a glass and drinking it.
+drinking/008.jpg,drinking,drinking,1,5.9,Woman sitting at table with a wine bottle and wine glass.
+drinking/009.jpg,drinking,drinking,1,6.2,A man is holding a cup of tea in his hand.
+running/001.jpg,running,running,1,5.6,Many children are running on a road with one child jumping.
+running/002.jpg,running,running,1,6.3,A woman is running on the beach with her hair in a ponytail.
+running/005.jpg,running,running,1,5.6,They are running on a road.
+running/006.jpg,running,running,1,6.2,Four women are running in a field on a sunny day.
+running/008.jpg,running,running,1,5.7,Man runs along a bridge with the New York City skyline in the background.
+running/009.jpg,running,walking,0,6.3,A woman walking up a stepside of a park with grass and white railings.
+sleeping/000.jpg,sleeping,sleeping,1,5.5,Lady sleeping.
+sleeping/001.jpg,sleeping,sleeping,1,6.2,The child is sleeping on a bed covered with a blanket with animal paw prints.
+sleeping/002.jpg,sleeping,sleeping,1,5.6,Woman sleeping at computer with headphones on.
+sleeping/004.jpg,sleeping,unknown,0,6.3,"In this image, the baby is wearing a pink outfit and has an pacifier in her mouth."
+sleeping/005.jpg,sleeping,sleeping,1,5.7,The girl is laying on her side on a bench with her head on her elbow.
+sleeping/006.jpg,sleeping,sleeping,1,6.2,Man sleeping on a bench by a bicycle in front of a gate.
+sleeping/007.jpg,sleeping,sleeping,1,5.7,A man is sleeping with his eyes closed next to a laptop that has a black keyboard.
+sleeping/008.jpg,sleeping,sleeping,1,6.1,Bed.
+sleeping/009.jpg,sleeping,sleeping,1,5.7,Man wearing an orange jacket and black pants is lying on the ground.
+typing/000.jpg,typing,sleeping,0,6.2,A woman is lying on a couch with a laptop on her lap and smiling.
+typing/002.jpg,typing,typing,1,5.7,The person in the picture is sitting at a desk with a laptop on it.
+typing/003.jpg,typing,sleeping,0,6.3,The woman is laying down with her hand near a black computer on a wooden table.
+typing/004.jpg,typing,typing,1,5.6,The man in the image is sitting with a laptop on his lap.
+typing/005.jpg,typing,typing,1,6.2,An elderly woman uses a laptop while sitting at a desk.
+typing/006.jpg,typing,typing,1,5.7,A person is sitting at a wooden table typing on a silver MacBook.
+typing/007.jpg,typing,typing,1,6.2,A person is sitting at a table with a iStock laptop.
+typing/008.jpg,typing,eating,0,5.7,Little boy sitting at a table with a laptop and a bowl of food in front of him.

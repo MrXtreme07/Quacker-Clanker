@@ -1,0 +1,51 @@
+image,expected,got,correct,seconds,raw
+sitting/000.jpg,sitting,sitting,1,8.0,"The person in the photo is sitting on a staircase, smiling as she listens to music through her earphones."
+sitting/001.jpg,sitting,sleeping,0,6.2,"The man is sitting on a couch, resting his head on his hand with a thoughtful expression."
+sitting/002.jpg,sitting,unknown,0,5.5,The person in the photo is playing the piano.
+sitting/003.jpg,sitting,sitting,1,5.8,"The person in the photo is sitting on a concrete staircase, looking at the camera."
+sitting/004.jpg,sitting,sitting,1,7.1,"A family of three is sitting together on a white couch in a bright, modern living room."
+sitting/006.jpg,sitting,sitting,1,6.0,"A group of friends are sitting together in a living room, watching a movie on a TV."
+sitting/007.jpg,sitting,sitting,1,7.0,"The person in the photo is sitting in a pew, likely at a church service or gathering."
+sitting/008.jpg,sitting,sitting,1,7.5,"A man and a young boy are sitting on a green inflatable tube at a ski resort, ready to ride down a snowy slope."
+sitting/009.jpg,sitting,sitting,1,7.4,"The person in the photo is sitting on a bench, looking out at a path in a park."
+eating/001.jpg,eating,eating,1,7.3,"The person in the photo is sitting at a table with two other people, eating and talking."
+eating/002.jpg,eating,eating,1,5.2,A family is enjoying a meal together at a restaurant.
+eating/003.jpg,eating,working,0,7.2,"A group of children are working together in a kitchen, preparing food by adding ingredients to a red bowl."
+eating/004.jpg,eating,eating,1,5.0,The person in the photo is eating a large hamburger.
+eating/005.jpg,eating,eating,1,6.6,The person in the photo is eating a meal at a table with others.
+eating/006.jpg,eating,eating,1,5.0,The person in the photo is eating a meal at a restaurant.
+eating/007.jpg,eating,eating,1,5.6,The man in the photo is smiling and holding a sandwich in a restaurant.
+eating/008.jpg,eating,eating,1,5.7,The person in the photo is eating a meal at a table with friends.
+eating/009.jpg,eating,eating,1,6.0,The person in the photo is enjoying a meal together at a restaurant.
+drinking/000.jpg,drinking,drinking,1,5.5,The man is sitting in a chair and holding a white mug.
+drinking/001.jpg,drinking,drinking,1,5.2,The person in the photo is drinking water from a plastic bottle.
+drinking/002.jpg,drinking,drinking,1,6.0,The person in the photo is drinking water from a glass.
+drinking/003.jpg,drinking,drinking,1,7.7,A young boy is drinking milk from a small cup while sitting at a table with a bottle of milk next to him.
+drinking/004.jpg,drinking,drinking,1,4.8,A young boy is drinking water from a plastic bottle.
+drinking/006.jpg,drinking,drinking,1,5.1,The person in the photo is drinking water from a plastic bottle.
+drinking/007.jpg,drinking,drinking,1,7.0,The person in the photo is drinking a drink from a glass while holding a lemon wedge.
+drinking/008.jpg,drinking,drinking,1,9.1,"The person in the photo is sitting at a table with a bottle of wine and a glass, holding her head in her hand, appearing to be in"
+drinking/009.jpg,drinking,eating,0,5.3,The man is smiling while holding a cup of tea and a small plate.
+running/001.jpg,running,unknown,0,6.6,A group of children are jumping joyfully on a paved outdoor court.
+running/002.jpg,running,running,1,4.2,A woman is running on a sunny beach.
+running/005.jpg,running,running,1,6.2,The person in the photo is running on a paved road.
+running/006.jpg,running,running,1,6.2,A young girl is running through a grassy field with a group of friends.
+running/008.jpg,running,running,1,8.1,The person in the photo is running on a city sidewalk with the Brooklyn Bridge and a city skyline in the background.
+running/009.jpg,running,running,1,5.3,A woman is running up a set of concrete stairs on a sunny day.
+sleeping/000.jpg,sleeping,sleeping,1,5.7,The person in the photo is sleeping on a bed.
+sleeping/001.jpg,sleeping,sleeping,1,2.9,The person in the photo is sleeping on a bed.
+sleeping/002.jpg,sleeping,sleeping,1,6.7,The person is sleeping on a keyboard while wearing headphones in front of a computer monitor.
+sleeping/004.jpg,sleeping,sleeping,1,5.7,The person in the photo is sleeping peacefully on her back.
+sleeping/005.jpg,sleeping,sleeping,1,4.3,The person is sleeping on a park bench.
+sleeping/006.jpg,sleeping,sleeping,1,6.4,"A man is lying on a wooden plank on the sidewalk, resting his head on his arms."
+sleeping/007.jpg,sleeping,sleeping,1,7.1,"The person is sleeping on their head on a laptop keyboard, surrounded by stacks of books and papers."
+sleeping/008.jpg,sleeping,sleeping,1,8.1,"The person in the photo is lying on her back on a white bed, with her legs bent and her arms wrapped around her body."
+sleeping/009.jpg,sleeping,sleeping,1,6.9,"The person in the photo is lying on the ground, appearing to be asleep or exhausted."
+typing/000.jpg,typing,sleeping,0,5.3,The person is lying on a couch and using a laptop.
+typing/002.jpg,typing,working,1,6.7,"The man is sitting at a desk, smiling and working on a laptop."
+typing/003.jpg,typing,typing,1,6.1,"A young boy is sitting at a desk, looking at a laptop screen with a focused expression."
+typing/004.jpg,typing,typing,1,6.6,"The person in the photo is sitting on the floor with a laptop, smiling at the camera."
+typing/005.jpg,typing,typing,1,5.6,The person in the photo is sitting at a desk and using a laptop computer.
+typing/006.jpg,typing,typing,1,5.7,The person in the photo is using a laptop computer while sitting at a desk.
+typing/007.jpg,typing,typing,1,5.9,A young boy is using a laptop computer while sitting at a wooden table.
+typing/008.jpg,typing,typing,1,5.7,"A young boy is sitting at a table, using a laptop computer."
